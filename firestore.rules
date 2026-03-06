@@ -1,0 +1,38 @@
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      // For prototype: allow if signed in or if email matches admin
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) || 
+        request.auth.token.email == 'admin@hireadrive.com'
+      );
+    }
+
+    match /users/{userId} {
+      allow read, write: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+    }
+
+    match /admins/{adminId} {
+      allow read: if isSignedIn();
+      allow write: if false; 
+    }
+
+    match /vehicles/{vehicleId} {
+      // Broad access for prototype seeding and marketplace browsing
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /rentalRequests/{rentalRequestId} {
+      // Broad read/write access for prototype governance and customer history
+      allow read, write: if true;
+    }
+  }
+}
