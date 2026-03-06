@@ -1,0 +1,5 @@
+{
+  "name": "AIDA – Autonomous Data Analyst",
+  "description": "An autonomous data analysis tool that helps non-technical users get insights, detect data quality issues, and run simple ML models directly in the browser.",
+  "requestFramePermissions": []
+}
