@@ -73,43 +73,6 @@ Web Interface
 Fleet Management Services
    ↓
 Data Storage (local persistence)
-Layers Explained
-
-User Layer
-
-Admin users
-
-Customer users
-
-Application Layer
-
-Login authentication
-
-Dashboard interface
-
-Vehicle management module
-
-Rental request workflow
-
-Service Layer
-
-Fleet management
-
-Vehicle availability tracking
-
-Role-based access control
-
-Rental request processing
-
-Data Layer
-
-Vehicle records
-
-Customer details
-
-Rental requests
-
-Fleet availability status
 
 📊 Admin Dashboard Capabilities
 
@@ -122,24 +85,6 @@ Features
 🚛 Vehicle management system
 
 ➕ Add / Edit / Delete vehicles
-
-📁 Category-based vehicle grouping
-
-🔧 Vehicle status management
-
-Available
-
-Assigned
-
-Maintenance
-
-📅 Fleet scheduling panel
-
-📈 Fleet utilization insights
-
-🛒 Customer Rental Experience
-
-Customers interact with the platform through a simplified rental interface.
 
 Features
 
@@ -178,101 +123,6 @@ Input validation and error handling
 
 Data isolation between user roles
 
-🎨 Design System
-
-The platform follows a modern SaaS design philosophy.
-
-Glassmorphism-inspired UI
-
-Dark gradient interface
-
-Smooth micro-animations
-
-Clean typography and icons
-
-Responsive layout system
-
-⚡ Platform Capabilities
-
-Cruise Autolink enables:
-
-Centralized fleet governance
-
-Real-time vehicle availability visibility
-
-Efficient rental operations
-
-Simplified vehicle lifecycle management
-
-Scalable architecture for enterprise fleet systems
-
-🎯 Problem Addressed
-
-Fleet operators often face several operational challenges.
-
-Common Issues
-
-Fragmented fleet management systems
-
-Lack of centralized vehicle visibility
-
-Manual scheduling and booking processes
-
-Inefficient vehicle utilization
-
-Cruise Autolink Solution
-
-Unified fleet management platform
-
-Automated vehicle availability tracking
-
-Streamlined rental workflows
-
-Data-driven operational insights
-
-📈 Future Enhancements
-
-Upcoming improvements planned for the platform:
-
-AI-based vehicle demand prediction
-
-Smart scheduling optimization
-
-GPS tracking integration
-
-Mobile application support
-
-Advanced analytics dashboard
-
-Multi-organization fleet management
-
-🚀 Deployment
-
-The platform can be easily deployed on static hosting services.
-
-Compatible platforms:
-
-GitHub Pages
-
-Netlify
-
-Vercel
-
-Static Web Servers
-
-No backend configuration is required.
-
-🤝 Contribution
-
-Contributions and feature suggestions are welcome.
-
-Fork the repository
-
-Create a new branch
-
-Implement your improvements
-
-Submit a pull request
 
 📜 License
 
